@@ -14,6 +14,7 @@
 		591EF27629AE99D300542D65 /* RecentSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591EF27529AE99D300542D65 /* RecentSearchesView.swift */; };
 		597CBE5E29AF6275008D9D7B /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597CBE5D29AF6275008D9D7B /* NavigationView.swift */; };
 		59884FF329AF7C94001A100D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59884FF229AF7C94001A100D /* SearchView.swift */; };
+		59884FFA29AF9295001A100D /* RemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = 59884FF929AF9295001A100D /* RemoteImage */; };
 		59F5B4C629AE80C300BC7D2F /* FotoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5B4C529AE80C300BC7D2F /* FotoAppApp.swift */; };
 		59F5B4C829AE80C300BC7D2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5B4C729AE80C300BC7D2F /* ContentView.swift */; };
 		59F5B4CA29AE80C400BC7D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F5B4C929AE80C400BC7D2F /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59884FFA29AF9295001A100D /* RemoteImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,9 @@
 			dependencies = (
 			);
 			name = FotoApp;
+			packageProductDependencies = (
+				59884FF929AF9295001A100D /* RemoteImage */,
+			);
 			productName = FotoApp;
 			productReference = 59F5B4C229AE80C300BC7D2F /* FotoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 59F5B4B929AE80C300BC7D2F;
+			packageReferences = (
+				59884FF829AF9295001A100D /* XCRemoteSwiftPackageReference "RemoteImage" */,
+			);
 			productRefGroup = 59F5B4C329AE80C300BC7D2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59884FF829AF9295001A100D /* XCRemoteSwiftPackageReference "RemoteImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crelies/RemoteImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59884FF929AF9295001A100D /* RemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59884FF829AF9295001A100D /* XCRemoteSwiftPackageReference "RemoteImage" */;
+			productName = RemoteImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59F5B4BA29AE80C300BC7D2F /* Project object */;
 }
